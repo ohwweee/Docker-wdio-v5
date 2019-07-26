@@ -121,7 +121,19 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
+    services: ['selenium-standalone'],
+	seleniumLogs : "./",
+	seleniumInstallArgs: {
+		version : "3.141.5",
+		baseURL : "https://selenium-release.storage.googleapis.com",
+		drivers : {
+			chrome : {
+				version : "74.0.3729.6",
+				arch    : process.arch,
+				baseURL : "https://chromedriver.storage.googleapis.com",
+			}		
+		}
+	},
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

@@ -25,6 +25,6 @@
     "yarn": "^1.17.3"
   },
   "devDependencies": {
-    "@wdio/selenium-standalone-service": "5.11.2",
+    "@wdio/selenium-standalone-service": "5.11.2"
   }
 }
